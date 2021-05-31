@@ -13,11 +13,11 @@ before_install:
 # после выполнения сборки запустить скрипт, который будет собирать статистику по JaCoCo
 # Здесь используется сторонни сервис https://codecov.io/
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t token
+  - bash <(curl -s https://codecov.io/bash)
 
 env:
   global:
-    - CODECOV_TOKEN="5f6e7da6-82a1-4009-bb33-85d832d7c551"
+    - CODECOV_TOKEN="86f60741-1ee1-4548-b063-2e7af9201f5e"
 
 # Отправлять уведомление на почтуyouremail@smtp.ru(Изменить на свою) если сборка упала
 notifications:
